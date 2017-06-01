@@ -1,11 +1,7 @@
 <div class="container">
   <div class="row">
     <%= @products.each do |product| %>
-      <div class="col-sm-2 col-md-4">
-        <div><%= image_tag("model_s.jpg", class: "img-responsive") %></div>
-        <a href="#"><h1><%= product.name %></h1></a>
-        <p><%= product.description %></p>
-      </div>
+      <%= render @products %>
     <% end %>
   </div>
 </div>
