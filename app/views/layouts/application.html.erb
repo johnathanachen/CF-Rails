@@ -35,7 +35,7 @@
           <li>
             <%= form_tag("/products", method: "get", class: "nav-barform navbar-left form-inline main-search") do %>
             <div class="form-group">
-              <%= label_tag :q, params[:q], class: "form-control", placeholder: "Search..." %>
+              <%= text_field_tag :q, params[:q], class: "form-control", placeholder: "Search..." %>
             </div>
               <%= submit_tag("Submit", class: "btn btn-default navbar-btn") %>
             <% end %>
